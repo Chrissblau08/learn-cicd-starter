@@ -20,7 +20,7 @@ func TestGetAPIKey(t *testing.T) {
 				"Authorization": []string{"ApiKey my-secret-key"},
 			},
 			wantKey:     "my-secret-key",
-			wantErr:     true,
+			wantErr:     false,
 			expectedErr: nil,
 		},
 		{
